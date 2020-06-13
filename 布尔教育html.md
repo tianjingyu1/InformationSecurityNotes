@@ -9,3 +9,18 @@ HTML指的是超文本标记语言（Hyper Text Markup Language）
 <DOCTYPE ...>文档类型
 strict.dtd 严格的 transitional.dtd 兼容的 frameset.dtd 松散的
 
+从上到下布局
+
+用div布局，css控制
+
+浮动布局
+
+清除浮动
+
+
+常犯错误：
+1. 不加doctype 导致低版本IE，解析效果不一样
+2. id为数字
+3. 文件编码与charset申明不一致
+
+盒模型：
