@@ -26,3 +26,7 @@ strict.dtd 严格的 transitional.dtd 兼容的 frameset.dtd 松散的
 盒模型：
 
 盒子的border 3要素 宽，形状，颜色
+
+一个盒子，有margin，border,padding，实占多少空间？
+竖直方向：height + padding-top + padding-bottom + border-top + border-bottom + margin-top +margin-bottom
+水平方向：width + padding-left + padding +right + border-left + border-right + margin-left + margin-right
