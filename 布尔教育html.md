@@ -24,3 +24,5 @@ strict.dtd 严格的 transitional.dtd 兼容的 frameset.dtd 松散的
 3. 文件编码与charset申明不一致
 
 盒模型：
+
+盒子的border 3要素 宽，形状，颜色
