@@ -71,3 +71,45 @@ background-image：背景图片
 background-repeat：背景图片是否重复
 
 background-attachment：背景图片是否固定
+
+background-position：图片位置
+
+选择器：id选择器，class选择器，标签选择器，派生选择器
+
+### 控制越精细优先级越高
+
+css四种引用方式：
+1. 外部链接一个CSS文件，我们在HTML头部分标明：<link href="css/my.css" rel="stylesheet" type="text/css"/>
+2. 头部直接写入CSS：<style type="text/css">div{margin:0;padding:0;border:1px solid red;}</style>
+3. 外接多个CSS文件时：<style type="text/css">$import url(my.css);</style>
+4. 直接在html标签里写入对这个标签的CSS控制，如：<div style="border:1px solid red;">测试信息</div>
+（页内style标签 外部css文件 行内style标签 import导入）
+
+相同的元素，如li，在不同的浏览器下，显示的效果稍有不同
+是因为，浏览器对各元素的margin,border,font-size等略有不同，
+如果杜绝这种情况，我们通过css强制让所有元素的属性值都一样
+这个过程，叫做css初始化
+
+## html标签
+### 无语义标签
+
+div 块级元素，布局分块用
+span 内联元素，选择文字用
+
+### 有语义标签
+
+h1-h6 标题
+p 段落
+img 图片
+embed 视频
+a 超链接和锚点
+ul 无序列表
+ol 有序列表
+table 表格
+
+h1~h6系列 表示1-6号标题，字越来越小
+p表示段落，在新闻网站中，h和p经常一起出现，新闻标题一般用h表示，而新闻的每一段内容，适合用p标签
+
+img src代表资源 alt代表注释，用于网页分析 title表示标题，鼠标放上去显示
+
+img是内联元素，同时是内联替换元素，替换元素是能设置宽高的
