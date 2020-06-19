@@ -101,4 +101,47 @@ navigator location history screen document
 
 作用域
 
-# 
+# 找对象
+
+1. 按id找 返回的是对象
+2. 按标签找 div,p,input,...  返回的是对象的集合
+3. 对于表单元素，可以按name来查询 返回的是对象集合
+4. 按类名找  返回的是对象集合
+5. 找子对象children,parent  非标准，但兼容很好，不包括空白节点（子节点 父节点）
+
+# 操作对象的属性
+
+普通属性可以通过对象.标签属性 来访问
+CSS属性通过对象.style属性
+
+标签属性与DOM对象属性的对应关系，绝大部分二者是相同的
+也有例外，如class属性
+
+css属性与DPM对象属性的想对应关系，二者通过obj.style.css属性名相对应
+如css属性带有横线，如border-top-style，则把横线去除并横线后的字母大写
+
+# 获取对象在内存中计算的样式
+
+对于<style></style>中的css属性值可以用obj.currentStylr和window.getComputedStyle()来获取
+获取的对象是只读的，要改样式还得靠obj.style
+
+# 删除对象
+
+1. 找到对象
+2. 找i到他们的父对象parentObj
+3. parentObj.removeChild(子对象)
+
+# 联动菜单 
+# 定时器 window.setTimeout() 循环调用
+
+# 清除定时器 clearlnterval() clearTimeout()
+
+事件对象包含事件相关的信息，如鼠标，时间，触发的DOM对象等
+事件对象被系统传递给事件函数的第1个参数
+事件对象的属性在IE/w3c略有不同
+一个重要的事件属性：target, srcElement(),代表事件发生的所在DOM对象
+
+事件委托
+
+# 正则表达式
+patt.test() 检测是否符合
